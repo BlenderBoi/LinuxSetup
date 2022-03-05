@@ -1,0 +1,140 @@
+# --- launcher ---
+super + Return
+	alacritty	
+
+super + w 
+	firefox	
+
+super + f 
+	alacritty -e ranger 		
+
+super + shift + f 
+	thunar		
+
+# --- command launcher ---
+super + r 
+	rofi -show drun	
+
+super + ctrl + r 
+	rofi -show run	
+
+
+#--- bspwm hotkeys ---
+super + ctrl + alt + q
+	bspc quit
+
+super + ctrl + alt + r
+	~/.config/sxhkd/scripts/reload_bspwm.sh
+	
+super + shift + c
+	bspc node -c
+
+# --- state/flags ---
+super + @space
+	~/.config/sxhkd/scripts/toogle_fullscreen.sh
+
+super + shift + @space
+	~/.config/sxhkd/scripts/toogle_floating.sh
+
+super + alt + @space
+	bspc node -t tiled
+
+super + alt + ctrl + @space
+	bspc node -t pseudo_tiled
+
+# focus/swap
+
+# Move / Swap Windows
+super + shift + {h,j,k,l}
+	dir={west,south,north,east}; \
+	bspc node -s "$dir.local" --follow \
+	    || bspc node -m "$dir" --follow
+
+super + shift + {Left,Down,Up,Right}
+	dir={west,south,north,east}; \
+	bspc node -s "$dir.local" --follow \
+	    || bspc node -m "$dir" --follow
+
+# focus the node in the given direction
+super + {h,j,k,l}
+	bspc node -f {west,south,north,east}
+
+super + {Left,Down,Up,Right}
+	bspc node -f {west,south,north,east}
+
+# focus the floating node in the current desktop
+super + Tab 
+	~/.config/sxhkd/scripts/cycle_floating_windows.sh	
+
+# --- Workspace ---
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+# --- preselect --- 
+
+# Directional Split Preselect
+super + alt + {h,j,k,l}
+	bspc node -p {west,south,north,east}
+
+super + alt + {Left, Down, Up, Right}
+	bspc node -p {west,south,north,east}
+
+# Vertical Split Preselect
+super + alt + v
+	bspc node -p east 
+
+# Horizontal Split Preselect
+super + alt + x 
+	bspc node -p south 
+
+# Cancel Split Preselect
+super + Escape 
+	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+	
+# --- resize --- 
+
+super + ctrl + {h,j,k,l}
+	~/.config/sxhkd/scripts/resize_window.sh {left ,down ,up ,right}
+
+super + ctrl + {Left,Down,Up,Right}
+	~/.config/sxhkd/scripts/resize_window.sh {left ,down ,up ,right}
+
+# move a floating window
+# super + shift + {Left,Down,Up,Right}
+#	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# --- Media Keys ---
+XF86Audio{Mute,RaiseVolume,LowerVolume}
+	amixer -q set Master {toggle,5%+,5%-}
+
+# --- Set Window Gap ---
+super + ctrl + KP_Add 
+  ~/.config/sxhkd/scripts/set_window_gaps.sh plus
+
+super + ctrl + KP_Subtract
+  ~/.config/sxhkd/scripts/set_window_gaps.sh minus 
+
+# --- Toogle Window Gap ---
+super + ctrl + KP_Enter
+  ~/.config/sxhkd/scripts/set_window_gaps.sh toggle 
+
+
+# -------------------------- TO ADD --------------------------
+
+# 1. Minimize Window
+#  - Coming Soon
+  
+# 2. Restore Hidden Windows
+#  - Coming Soon
+
+# 3. Move Floating Window
+# - Super + Shift + HJKL / Left Down Up Right
+
+# 4. Resize Floating Window 
+# - Super + Ctrl + HJKK / Left Down Up Right
+
+# 5. Increase Gap 
+# - Super + NumpadPlus 
+
+# 5. Decrease Gap 
+# - Super + NumpadMinus 

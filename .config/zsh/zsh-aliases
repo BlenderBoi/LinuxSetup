@@ -1,0 +1,5 @@
+alias la="ls -a"
+alias v="nvim"
+alias vim="nvim"
+alias tclock24="tty-clock -c "
+alias tclock12="tty-clock -c -t"
