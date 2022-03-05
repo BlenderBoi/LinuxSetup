@@ -12,7 +12,7 @@ echo "Set Screen Layout"
 sudo cp -i Lightdm/screen_layout.sh /etc/lightdm/screen_layout.sh
 
 echo "Adding Wallpaper"
-sudo cp -r -i Wallpaper /usr/share/backgrounds/wallpapers
+sudo cp -r -i Wallpapers /usr/share/backgrounds/wallpapers
 
 echo "Enabling Lightdm"
 sudo systemctl enable lightdm 
