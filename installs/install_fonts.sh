@@ -2,7 +2,7 @@ echo "Install Language Support Fonts"
 sudo pacman -S adobe-source-han-sans-otc-fonts adobe-source-han-serif-otc-fonts noto-fonts-emoji ttf-liberation
 
 echo "Install NerdFonts Jetbrains"
-mkdir ~/.fonts
+mkdir -p ~/.fonts
 curl https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip -L -O
 unzip -d ~/.fonts/ JetBrainsMono.zip
 rm JetBrainsMono.zip

@@ -26,12 +26,11 @@ echo "Install xfce4 audio plugin and pavucontrol"
 sudo pacman -S xfce4-pulseaudio-plugin
 sudo pacman -S pavucontrol
 
-echo "Install Thunar and Plugins"
-sudo pacman -S thunar
-sudo pacman -S thunar-archive-plugin
-sudo pacman -S thunar-volman
-sudo pacman -S gvfs
-#sudo pacman -S gvfs-mtp
-
+echo "Install PCManFm"
+sudo pacman -S pcmanfm
 echo "Install Archive Software"
 sudo pacman -S engrampa
+
+echo "Add PCManFm Actions"
+mkdir -p ~/.local/share/file-manager/actions
+cp -r -f Pcmanfm/actions ~/.local/share/file-manager/ 

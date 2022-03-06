@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Action
+Tooltip=Open New Window
+Name=Open New Window
+Profiles=profile-one;
+Icon=window-new
+
+[X-Action-Profile profile-one]
+MimeTypes=inode/directory;
+Exec=pcmanfm -n %f
+Name=Default profile

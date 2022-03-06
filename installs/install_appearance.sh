@@ -1,16 +1,19 @@
 echo "Install Wallpaper"
 cp -r -f Wallpapers ~/
 
+
 echo "Install lxappearance"
 sudo pacman -S lxappearance
 
-# echo "Add Theme and Icons"
-# git clone https://github.com/TheGreatMcPain/gruvbox-material-gtk.git
-# mkdir -p ~/.icons
-# mkdir -p ~/.themes
-# mv -f gruvbox-material-gtk/icons/Gruvbox-Material-Dark ~/.icons/Grubbox-Material-Dark
-# mv -f gruvbox-material-gtk/themes/Gruvbox-Material-Dark ~/.themes/Grubbox-Material-Dark
-# rm -r gruvbox-material-gtk
+echo "Install Papirus Icon"
+sudo pacman -S papirus-icon-theme
+
+echo "Install Theme"
+sudo pacman -S arc-gtk-theme
+echo "Install GTK Engine Murrine"
+sudo pacman -S gtk-engine-murrine
+
+
 
 echo "copy gtkrc-2.0"
 cp -f .gtkrc-2.0 ~/.gtkrc-2.0

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Action
+Tooltip=Open Neovim
+Name=Open Neovim 
+Profiles=profile-one;
+Icon=nvim
+
+[X-Action-Profile profile-one]
+MimeTypes=inode/directory;
+Exec=alacritty -e nvim -c ene 
+Name=Default profile
