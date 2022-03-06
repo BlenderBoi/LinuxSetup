@@ -19,5 +19,5 @@ setxkbmap -option caps:escape
 
 shopt -s autocd
 
-neofetch | lolcat
+neofetch
 

@@ -68,5 +68,5 @@ setxkbmap -option caps:escape
 
 # Bling ----------
 clear
-# neofetch
-neofetch | lolcat
+neofetch
+#neofetch | lolcat

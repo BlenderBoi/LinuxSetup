@@ -1,3 +1,4 @@
+
 echo "Install X Window System and Audio"
 sudo pacman -S pulseaudio pulseaudio-alsa xorg xorg-xinit xorg-server
 
@@ -22,4 +23,4 @@ sudo pacman -S python-pip
 
 echo "Install xdg-utils"
 sudo pacman -S xdg-utils
-cp -i .config/mimeapps.list ~/.config
+# cp -f .config/mimeapps.list ~/.config

@@ -1,7 +1,7 @@
 echo "Install xfce4"
 sudo pacman -S xfce4
 echo "exec startxfce4" > ~/.xinitrc
-sudo systemctl enable lightdm
+#sudo systemctl enable lightdm
 
 echo "Install xfce4 audio plugin and pavucontrol"
 sudo pacman -S xfce4-pulseaudio-plugin

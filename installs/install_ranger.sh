@@ -7,4 +7,4 @@ echo "Install Ranger Devicons"
 git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
 
 echo "copy ~/.config/ranger"
-cp -i -r .config/ranger ~/.config/
+cp -f -r .config/ranger ~/.config/

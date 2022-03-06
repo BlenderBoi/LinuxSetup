@@ -5,7 +5,7 @@ sudo pacman -S openssh
 sudo pacman -S git-lfs
 
 echo "Copy Git Config"
-cp -i .gitconfig ~/
+cp -f .gitconfig ~/
 
 
 mkdir -p ~/.ssh
@@ -15,4 +15,4 @@ ssh-keygen -f ~/.ssh/blenderboi_id_rsa
 ssh-keygen -f ~/.ssh/unreal_id_rsa
 
 echo "SSH Config"
-cp -i .ssh/config ~/.ssh/config
+cp -f .ssh/config ~/.ssh/config

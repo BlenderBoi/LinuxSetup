@@ -1,13 +1,13 @@
 echo "Create .bak folder if not exist"
 mkdir -p ~/.bak/etc/pacman.conf
 echo "Backup Pacman.conf"
-sudo cp -i /etc/pacman.conf ~/.bak/etc/pacman.conf
+sudo cp -f /etc/pacman.conf ~/.bak/etc/pacman.conf
 
 echo "Enable Multilib"
-sudo cp -i Pacman/pacman.conf /etc/pacman.conf
+sudo cp -f Pacman/pacman.conf /etc/pacman.conf
 
 echo "Update System"
-sudo -Syu
+sudo pacman -Syu
 
 echo "Install Nvidia Drivers"
 sudo pacman -S --needed nvidia-dkms nvidia-utils lib32-nvidia-utils nvidia-settings vulkan-icd-loader lib32-vulkan-icd-loader

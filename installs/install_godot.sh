@@ -20,8 +20,8 @@ echo "Remove Zip File"
 rm Godot_v3.4.3-stable_mono_x11_64.zip
   
 echo "Symlink to ~/bin"
-ln -s -i ~/apps/Godot/Godot_v3.4.3-stable_mono_x11_64/Godot_v3.4.3-stable_mono_x11.64 ~/bin/godot-mono-3.4.3
-ln -s -i ~/apps/Godot/Godot_v3.4.3-stable_mono_x11_64/Godot_v3.4.3-stable_mono_x11.64 ~/bin/godot
+ln -s -f ~/apps/Godot/Godot_v3.4.3-stable_mono_x11_64/Godot_v3.4.3-stable_mono_x11.64 ~/bin/godot-mono-3.4.3
+ln -s -f ~/apps/Godot/Godot_v3.4.3-stable_mono_x11_64/Godot_v3.4.3-stable_mono_x11.64 ~/bin/godot
 
 echo "Create desktop file"
 echo "[Desktop Entry]" > ~/.local/share/applications/godot-v3.4.3.desktop

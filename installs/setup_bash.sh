@@ -1,8 +1,8 @@
 echo "copy bash profile"
-cp -i .bash_profile ~/.bash_profile
+cp -f .bash_profile ~/.bash_profile
 
 echo "copy bashrc"
-cp -i .bashrc ~/.bashrc
+cp -f .bashrc ~/.bashrc
 
 sudo pacman -S bash-completion
 

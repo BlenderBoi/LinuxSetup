@@ -109,7 +109,7 @@ return packer.startup(function(use)
   -- Distraction Free Mode
   use 'junegunn/goyo.vim'
 
-  use 'norcalli/nvim-colorizer.lua'
+ -- use 'norcalli/nvim-colorizer.lua'
   -- Git
   use "lewis6991/gitsigns.nvim"
   use "tpope/vim-fugitive"

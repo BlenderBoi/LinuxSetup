@@ -8,6 +8,6 @@ unzip -d ~/.fonts/ JetBrainsMono.zip
 rm JetBrainsMono.zip
 
 echo "Install NerdFonts Hack"
-curl https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip - L -O
+curl https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip -L -O
 unzip -d ~/.fonts/ Hack.zip
 rm Hack.zip
