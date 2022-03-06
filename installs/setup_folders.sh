@@ -1,11 +1,11 @@
-Create Config Folder
+#Create Config Folder
 mkdir -p ~/.config
-Create Fonts Folder
+#Create Fonts Folder
 mkdir -p ~/.fonts
-Create Themes Folder
+#Create Themes Folder
 mkdir -p ~/.themes
-Create Desktop Folder
+#Create Desktop Folder
 mkdir -p ~/Desktop
-Create ~/.local/share/applications Folder
+#Create ~/.local/share/applications Folder
 mkdir -p ~/.local/share/applications
 
