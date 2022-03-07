@@ -1,4 +1,4 @@
-
+sudo pacman -Syu
 
 printf "\n\n\n\n" 
 

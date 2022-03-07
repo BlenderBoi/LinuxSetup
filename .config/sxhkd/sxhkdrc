@@ -14,6 +14,12 @@ super + f
 super + v 
 	alacritty -e nvim		
 
+super + b 
+	alacritty -e blender		
+
+super + shift + b 
+	blender		
+
 # --- command launcher ---
 super + r 
 	rofi -show drun	
