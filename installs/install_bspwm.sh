@@ -22,15 +22,12 @@ cp -f -r .config/picom ~/.config/
 echo "install xfce4 panel"
 sudo pacman -S xfce4-panel
 
+cp -f -r .config/xfce4 ~/.config/
+
+cp -f -r .config/gtk-3.0 ~/.config/
+cp -f ./gtkrc-2.0 ~/.config/
+
 echo "Install xfce4 audio plugin and pavucontrol"
 sudo pacman -S xfce4-pulseaudio-plugin
 sudo pacman -S pavucontrol
 
-echo "Install PCManFm"
-sudo pacman -S pcmanfm
-echo "Install Archive Software"
-sudo pacman -S engrampa
-
-echo "Add PCManFm Actions"
-mkdir -p ~/.local/share/file-manager/actions
-cp -r -f Pcmanfm/actions ~/.local/share/file-manager/ 

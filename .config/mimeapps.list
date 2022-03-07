@@ -1,0 +1,13 @@
+[Added Associations]
+text/plain=nvim.desktop;
+application/vnd.ms-publisher=nvim.desktop;
+application/octet-stream=nvim.desktop;
+image/png=sxiv.desktop;
+image/jpeg=sxiv.desktop;
+
+[Default Applications]
+text/plain=nvim.desktop
+application/vnd.ms-publisher=nvim.desktop
+application/octet-stream=nvim.desktop
+image/png=sxiv.desktop
+image/jpeg=sxiv.desktop
