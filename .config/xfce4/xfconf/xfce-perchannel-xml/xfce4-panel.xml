@@ -24,6 +24,7 @@
         <value type="int" value="1"/>
       </property>
       <property name="output-name" type="string" value="Primary"/>
+      <property name="autohide-behavior" type="uint" value="0"/>
     </property>
     <property name="panel-2" type="empty">
       <property name="position" type="string" value="p=6;x=960;y=14"/>
@@ -67,13 +68,14 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-items" type="array">
+        <value type="string" value="steam"/>
         <value type="string" value="flameshot"/>
       </property>
     </property>
     <property name="plugin-8" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
       <property name="show-notifications" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="firefox.instance6953;firefox.instance852"/>
+      <property name="mpris-players" type="string" value="firefox.instance1381;firefox.instance6953;firefox.instance7532;firefox.instance852"/>
     </property>
     <property name="plugin-11" type="string" value="separator">
       <property name="style" type="uint" value="0"/>

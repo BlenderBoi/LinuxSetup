@@ -14,6 +14,12 @@ super + f
 super + v 
 	alacritty -e nvim		
 
+ctrl + Print 
+  flameshot gui	
+
+Print 
+  flameshot full 
+
 super + b 
 	alacritty -e blender		
 
