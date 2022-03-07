@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Action
+Tooltip=Open in Ranger 
+Name=Open in Ranger 
+Profiles=profile-one;
+Icon=folder
+
+[X-Action-Profile profile-one]
+MimeTypes=inode/directory;
+Exec=alacritty -e ranger %f 
+Name=Default profile
