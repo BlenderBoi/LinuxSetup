@@ -1,16 +1,30 @@
+printf "\n\n\n\n" 
+
 echo "Create .bak folder if not exist"
 mkdir -p ~/.bak/etc/pacman.conf
+
+printf "\n\n\n\n" 
+
 echo "Backup Pacman.conf"
 sudo cp -f /etc/pacman.conf ~/.bak/etc/pacman.conf
+
+printf "\n\n\n\n" 
 
 echo "Enable Multilib"
 sudo cp -f Pacman/pacman.conf /etc/pacman.conf
 
+printf "\n\n\n\n" 
+
 echo "Update System"
 sudo pacman -Syu
 
+printf "\n\n\n\n" 
+
 echo "Install Nvidia Drivers"
 sudo pacman -S --needed nvidia-dkms nvidia-utils lib32-nvidia-utils nvidia-settings vulkan-icd-loader lib32-vulkan-icd-loader
+
+printf "\n\n\n\n" 
+
 
 echo "Install Wine Dependencies"
 sudo pacman -S --needed wine-staging giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls \
